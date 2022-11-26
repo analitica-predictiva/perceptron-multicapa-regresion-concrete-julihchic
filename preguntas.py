@@ -104,7 +104,7 @@ def pregunta_04():
     #   * De 1 a 8 neuronas en la capa oculta
     #   * Activación con la función `relu`.
     #   * Tasa de aprendizaje adaptativa
-    #   * Momentun con valores de 0.7, 0.8 y 0.9
+    #   * Momentun con valores de 0.7, 0.8, 0.9
     #   * Tasa de aprendijzaje inicial de 0.01, 0.05, 0.1
     #   * Un máximo de 5000 iteraciones
     #   * Use parada temprana
@@ -113,7 +113,7 @@ def pregunta_04():
         "mlpregressor_hidden_layer_sizes": range(1,9),  
         "mlpregressor_activation": ["relu"],  
         "mlpregressor_learning_rate": ["adaptative"],  
-        "mlpregressor_momentum": ["0.7, 0.8 y 0.9"],  
+        "mlpregressor_momentum": ["0.7, 0.8, 0.9"],  
         "mlpregressor_learning_rate_init": ["0.01, 0.05, 0.1"],  
         "mlpregressor_max_iter": ["5000"],  
         "mlpregressor_early_stopping": [True],  
