@@ -18,7 +18,14 @@ def pregunta_01():
     # Lea el archivo `concrete.csv` y asignelo al DataFrame `df`
     df = pd.read_csv('concrete.csv', header=0,sep=',')  
 
-   
+    # Asigne la columna `strength` a la variable `y`.
+    y = df['strength'].copy()
+
+    # Asigne una copia del dataframe `df` a la variable `X`.
+    X = df.copy()  
+
+    # Remueva la columna `strength` del DataFrame `X`.
+    X = df.drop('strength', axis=1)  
 
     # Retorne `X` y `y`
     return X, y
