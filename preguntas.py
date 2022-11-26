@@ -16,16 +16,16 @@ def pregunta_01():
     Carga y separación de los datos en `X` `y`
     """
     # Lea el archivo `concrete.csv` y asignelo al DataFrame `df`
-    df = pd.read_csv('concrete.csv', header=0, sep=',')  
+    df = pd.read_csv("concrete.csv", header=0, sep=",")  
 
     # Asigne la columna `strength` a la variable `y`.
-    y = df['strength'].copy()
+    y = df["strength"].copy()
 
     # Asigne una copia del dataframe `df` a la variable `X`.
     X = df.copy()  
 
     # Remueva la columna `strength` del DataFrame `X`.
-    X = X.drop('strength', axis=1)  
+    X = X.drop("strength", axis=1)  
 
     # Retorne `X` y `y`
     return X, y
@@ -37,7 +37,7 @@ def pregunta_02():
     """
 
     # Importe train_test_split
-    from ____ import ____
+    from sklearn.model_selection import train_test_split
 
     # Cargue los datos de ejemplo y asigne los resultados a `X` y `y`.
     x, y = pregunta_01()
